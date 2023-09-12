@@ -1,0 +1,32 @@
+public class Celular {
+    private String modelo;
+    private String marca;
+    private double preco;
+    
+    public void Celular(String nome, String marca, double preco){
+        this.nome = nome;
+        this.marca = marca;
+        this.preco = preco;
+    }
+    
+    public void setNome(String nomeCelular){
+        nome = nomeCelular;
+    }
+    public String getnome(){
+        return nomeCelular;
+    }
+    
+    public void setMarca(String marcaCelular){
+        marca = marcaCelular;
+    }
+    public getMarca(){
+        return marcaCelular;
+    }
+    
+    public void setPreco(double precoCelular){
+        preco = precoCelular;
+    }
+    public getPreco(){
+        return precoCelular;
+    }
+}
