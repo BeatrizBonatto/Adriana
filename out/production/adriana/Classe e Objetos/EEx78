@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class Ex78 {
+    public static void main(String args[]) {
+     Scanner sc = new Scanner(System.in);
+     int i;
+    
+      String[] lista = new String[10];
+      //método para adicionar nomes à lista
+      for (i = 0; i<10; i++) {
+          System.out.println("Digite 10 nomes:");
+          System.out.print(i+1, "- ");
+          nome[i] = new Scanner(System.in).nextLine();
+      }
+      
+      //método de procurar nome
+      System.out.print("Digite o nome a ser procurado: ");
+      String nomeProcurado = new Scanner(System.in).nextLine();
+     
+      boolean nomeEncontrado = false;
+        for (int j = 0; j < nomes.length; j++) {
+            if (nomes[j].equals(nomeProcurado)) {
+                nomeEncontrado = true;
+                break;
+            }
+        }
+    }
+}
