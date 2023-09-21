@@ -1,0 +1,24 @@
+
+import javax.swing.*;
+import java.util.Scanner;
+
+/*79.Escreva um algoritmo que permita a leitura das notas de uma turma de 20 alunos. Calcular a média
+da turma e contar quantos alunos obtiveram nota acima desta média calculada. Escrever a média da
+turma e o resultado da contagem.*/
+
+public class Ex79 {
+    public static void main(String[] args) {
+        int[] notaAluno = new int[20];
+        
+        int i;
+        for (i=0;i<20;i++)
+        {
+            notaAluno[i] = (JOptionPane.showInputDialog("Digite a nota do aluno "+ (i+1)));
+        }
+      
+        int Leitura = new int();
+        Scanner sc = new Scanner(System.in);
+        
+        System.out.println(notaAluno);
+    }
+}
