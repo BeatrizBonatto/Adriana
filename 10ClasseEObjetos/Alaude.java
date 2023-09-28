@@ -7,7 +7,7 @@ public class Alaude {
     private String material;
     private boolean analogico;
 
-    public void Alaude(int cordas, String material, boolean analogico){
+    public Alaude(int cordas, String material, boolean analogico){
         this.cordas = cordas;
         this.material = material;
         this.analogico = analogico;
@@ -19,7 +19,7 @@ public class Alaude {
         System.out.println("Escolha o tom de afinação do alaude: ");
         String escolhaTom = sc.next();
         String emoji = Character.toString((char) 0x1F49B);
-        System.out.println("Seu alaude foi afinado \uD83C\uDFB5");
+        System.out.println("Seu alaude foi afinado no tom"+ escolhaTom + emoji);
     }
 
     public void tocar(boolean som) {
