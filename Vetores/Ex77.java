@@ -20,7 +20,7 @@ public class Ex77 {
 
          System.out.print("   ");
         for (i = 0; i < vetor.length; i++) {
-            System.out.print(vetor[i] + " ");
+            System.out.print(vetor[i] + "  ");
         }
     }
     }
