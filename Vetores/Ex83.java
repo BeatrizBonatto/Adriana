@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Ex83 {
     public static void main(String[] args) {
-        int tamanhoVetor = 5;
+        int tamanhoVetor = 20;
         double[] vetor = new double[tamanhoVetor];
 
         Scanner sc = new Scanner(System.in);
