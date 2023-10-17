@@ -1,3 +1,4 @@
+import java.text.DecimalFormat;
 import java.util.Scanner;
 
 /*85) Faça um algoritmo para ler e armazenar em um vetor a temperatura média
@@ -30,6 +31,8 @@ public class Ex85 {
             vetorTemperaturasDias[i] = temperaturaDia;
         }
 
+        System.out.println();
+
         //comparar pra achar menor
         Double menor = vetorTemperaturasDias[0];
 
@@ -56,8 +59,9 @@ public class Ex85 {
             somaTemperaturas = somaTemperaturas + vetorTemperaturasDias[i];
         }
 
+        DecimalFormat df = new DecimalFormat("0.00");
         Double mediaTemperatura = somaTemperaturas / vetorTemperaturasDias.length;
-        System.out.println("A média de temperaturas do ano é de " + mediaTemperatura + " °C.");
+        System.out.println("A média de temperaturas do ano é de " + df.format(mediaTemperatura) + " °C.");
 
         /*comparar e ver as temperaturas menores que a média*/
         Double[] vetorTemperaturasAbaixoMedia = new Double[anoDias];
@@ -77,11 +81,10 @@ public class Ex85 {
 
     //descorir se o ano é bixesto ou não e retornar quantidade de dias
     public Integer defineDias(Integer ano) {
-        Integer quantidadeDias = 365;
+        Integer quantidadeDias = 5;
         if (ano % 4 == 0) {
-            quantidadeDias = 366;
+            quantidadeDias = 6;
         }
         return quantidadeDias;
     }
-
 }
