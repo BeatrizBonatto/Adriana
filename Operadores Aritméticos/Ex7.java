@@ -22,22 +22,21 @@ public class Ex7{
             int a2 = sc.nextInt();    //ano
 
             //primeiro, validação do ano
-            if (a1 > a2):
+            if (a1 > a2) {
                 int dif_a = a1 - a2;
 
                 //depois, validação do mês
-                if (m1 > m2):
+                if (m1 > m2) {
                     int dif_m = m1 - m2;
-                else:
+                }else {
                     int nova_dif_a = dif_a - 1;
-                    int dif_m = 12 - (m2 - m1); 
-            else:
+                    int dif_m = 12 - (m2 - m1);
+                }
+            }else {
                 System.out.println("Data inválida");
-
+            }
 
         sc.close();
 
-
     }
-
 }
