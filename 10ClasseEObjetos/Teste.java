@@ -16,13 +16,21 @@ public class Teste {
         alaude.tocar(true);
         alaude.historia("1");
         
+        Celular celular = new Celular("iPhone 13", "Apple", 5000);
+        System.out.println("O modelo do celular é: " + celular.getModelo());
+        System.out.println("A marca do celular é: " + celular.getMarca());
+        System.out.println("O preço do celular é: " + celular.getPreco());
+        celular.ligar(true);
+        celular.discar("11999999999");
+        celular.mandarMensagem("11999999999", "Olá, tudo bem?");
+        celular.ligar(false);
         
         Borracha borracha = new Borracha("Vermelha", "Lápis de Cor", false);
         System.out.println(borracha.apagar());
         System.out.println(borracha.borrar());
         System.out.println(borracha.esfregar());
         
-        Gato gato1 = new Gato("preto", "curto", 3);
+        Gato gato = new Gato("preto", "curto", 3);
         gato.correr(10);
         System.out.println(gato.irritado());
         gato.miar();
