@@ -3,17 +3,21 @@ package TryCatch;
 import java.util.Scanner;
 
 public class Validador {
-    public static void validarNumero(Integer numero) {
+    public static void validarNumero(String numero) {
+        Scanner sc = new Scanner(System.in);
+
         try {
+            int numeroInteiro = Integer.parseInt(numero);
+
             Calculo calculo = new Calculo();
-            Calculo.calcularTabuada(numero);
+            Calculo.calcularTabuada(numeroInteiro);
 
         } catch (Exception ex) {
             System.out.println("O valor inserido deve ser um número inteiro!");
-
-        } finally {
-            System.out.println("Prontinho");
-            System.out.println("Espero ter ajudado!");
+            System.out.print("Escolha um número para ver tabuada: ");
+            String novoNumero = sc.next();
+            numero = novoNumero;
+            validarNumero(novoNumero);
         }
     }
 }

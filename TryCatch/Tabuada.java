@@ -9,9 +9,10 @@ public class Tabuada {
         System.out.println();
         System.out.println("GERADOR DE TABUADA");
         System.out.print("Escolha um número para ver tabuada: ");
-        Integer numero = sc.nextInt();
+        String numero = sc.next();
         System.out.println();
         Validador.validarNumero(numero);
         sc.close();
+        System.out.println("Espero ter ajudado!");
     }
 }
