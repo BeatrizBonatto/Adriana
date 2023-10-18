@@ -16,6 +16,8 @@ public class Teste {
         alaude.tocar(true);
         alaude.historia("1");
 
+        System.out.println();
+
         System.out.println("Celular");
         Celular celular = new Celular("iPhone 13", "Apple", 5000);
         System.out.println("O modelo do celular é: " + celular.getModelo());
@@ -32,11 +34,15 @@ public class Teste {
         System.out.println(borracha.borrar());
         System.out.println(borracha.esfregar());
 
+        System.out.println();
+
         System.out.println("Estojo");
         Estojo estojo = new Estojo("Vermelho", 5);
         estojo.abrir(true);
         estojo.guardar(5, "Lápis");
         estojo.abrir(false);
+
+        System.out.println();
 
         System.out.println("Gato");
         Gato gato = new Gato("preto", "curto", 3);
