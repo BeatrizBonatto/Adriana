@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 //Escreva um algoritmo para ler um valor (do teclado) e escrever (na tela) o seu antecessor.
 
-public class ex5 {
+public class Ex5 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
