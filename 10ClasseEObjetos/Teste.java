@@ -9,8 +9,12 @@ public class Teste {
         System.out.println();
 
         Gato gato1 = new Gato("preto", "curto", 3);
-        System.out.println("O gato 1 é "+gato1.getCor() + ", tem pelo "+gato1.getPelo() +"e tem "+gato1.getIdade()+ " anos");
-        System.out.println();
+        gato.correr(10);
+        System.out.println(gato.irritado());
+        gato.miar();
+        gato.brincar();
+        gato.comer();
+        gato.dormir();
 
     }
 }
