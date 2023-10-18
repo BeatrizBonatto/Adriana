@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 //6) Escreva um algoritmo para ler as dimensões de um retângulo (base e altura), calcular e escrever a área do retângulo. 
 
-public class ex6 {
+public class Ex6 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
