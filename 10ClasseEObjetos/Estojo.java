@@ -13,15 +13,24 @@ public class Estojo {
     }
       
     //metodos
-    public int estaCheio(int tamanho) {
-      String[] vetorEstojo = new String[tamanho]; 
-      if (vetorEstojo.lengh < tamanho) {
-        System.out.println("Ainda há espaço no estojo");
-      } else { 
-        System.out.println("Acabou o espaço no estojo")
-      }
+    public boolean abrir(boolean aberto) {
+      if (aberto = true) {
+      System.out.println("Estojo esta aberto");
+    } else {
+      System.out.println("Estojo esta fechado");
     }
-      
+    }
+    
+    public int guardar(int tamanho) {
+      String[] vetorEstojo = new String[tamanho]; 
+      for (int i = 0; i < tamanho, i++) {
+        System.out.println("O que quer guardar no esstojo?");
+        String item = sc.nextLine();
+        vetor[i] = item;
+      }
+      System.out.println("Acabou o espaço no estojo");
+    }
+    
     //get e set 
     public String getCor() {
       return cor;
