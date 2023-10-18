@@ -21,11 +21,11 @@ public class Estojo {
     }
     }
     
-    public int guardar(int tamanho) {
+    public int guardar(int tamanho, String item) {
       String[] vetorEstojo = new String[tamanho]; 
       for (int i = 0; i < tamanho, i++) {
         System.out.println("O que quer guardar no esstojo?");
-        String item = sc.nextLine();
+        item = sc.nextLine();
         vetor[i] = item;
       }
       System.out.println("Acabou o espaço no estojo");
