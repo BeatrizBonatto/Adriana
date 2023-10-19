@@ -21,9 +21,9 @@ public class Gato {
         if (velocidade > 0) {
             velocidade = 5;
         }
-        System.out.println("O gato percorreu a distancia de "+distancia + "metros.");
+        System.out.println("O gato percorreu a distancia de "+distancia + " metros.");
     }
-    public String irritado () {
+    public String arranhar () {
         return ("Cuidado, ele irá arranhar");
 
     }

@@ -16,16 +16,13 @@ public class Filme {
     }
 
     Scanner sc = new Scanner(System.in);
-        public void nota(double notaFilme){
+    public void darNotaFilme(boolean notaFilme){
+        if (notaFilme = true) {
             System.out.println("Digite uma nota para o filme: ");
             double nota =sc.nextDouble();
-            System.out.println();
-            sc.close();
+            System.out.println("Obrigado por avaliar!");
         }
-
-    //public void
-
-
+    }
 
     public String getNome() {
         return nome;

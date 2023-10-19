@@ -1,5 +1,7 @@
 package ClasseEObjetos;
 
+import java.util.Scanner;
+
 public class Estojo {
   private String cor;
   private int compartimentos;
@@ -22,15 +24,18 @@ public class Estojo {
     }
   }
 
-  public int guardar(int tamanho, String item) {
+  public boolean guardar(boolean guardado) {
+    Scanner sc = new Scanner(System.in);
     String[] vetorEstojo = new String[tamanho];
-    for (int i = 0; i < tamanho; i++) {
-      System.out.println("O que quer guardar no esstojo?");
-      String item1 = item;
-      vetorEstojo[i] = item1;
-    }
-    System.out.println("Acabou o espaço no estojo");
-    return tamanho;
+
+    if (guardado = true) {
+      for (int i = 0; i < tamanho; i++) {
+        System.out.println("O que quer guardar no esstojo?");
+        String item = sc.next();
+        vetorEstojo[i] = item;
+      }
+    } System.out.println("Acabou o espaço no estojo");
+    return guardado;
   }
 
   //get e set

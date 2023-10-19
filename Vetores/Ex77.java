@@ -18,6 +18,7 @@ public class Ex77 {
         vetor[3] = vetor[1];
         vetor[aux] = vetor[vetor[2]];
 
+        System.out.println();
          System.out.print("   ");
         for (i = 0; i < vetor.length; i++) {
             System.out.print(vetor[i] + "  ");

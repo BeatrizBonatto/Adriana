@@ -1,5 +1,7 @@
 package ClasseEObjetos;
 
+import java.util.Scanner;
+
 public class Celular {
     private String modelo;
     private String marca;
@@ -11,7 +13,36 @@ public class Celular {
         this.preco = preco;
     }
 
+    public boolean ligar(boolean ligandoCelular) {
+        if (ligandoCelular = true){
+            System.out.println("Celular ligando");
+        } else {
+            System.out.println("Celular desligando");
+        }
+        return ligandoCelular;
+    }
 
+    public boolean discar(boolean telefonado) {
+        Scanner sc = new Scanner(System.in);
+        if (telefonado = true){
+            System.out.println("digite o numero para o qual quer ligar:");
+            String num = sc.nextLine();
+            System.out.println("Ligando para " + num + "...");
+        }
+        return telefonado;
+    }
+
+    public String mandarMensagem(boolean mensagem) {
+        Scanner sc = new Scanner(System.in);
+        if (mensagem = true){
+            System.out.println("DIgite a mensagem que quer enviar:");
+            String msg = sc.next();
+            System.out.println("digite o numero para o qual quer enviar:");
+            String numero = sc.nextLine();
+            System.out.println("Mensagem" + msg  + " enviada para " + numero);
+        }
+        return null;
+    }
         
     public String getModelo(){
         return modelo;
