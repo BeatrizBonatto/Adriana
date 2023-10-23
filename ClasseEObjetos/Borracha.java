@@ -1,8 +1,8 @@
 package ClasseEObjetos;
 public class Borracha {
-    String cor;
-    String marca;
-    boolean capa;
+    private String cor;
+    private String marca;
+    private boolean capa;
 
     public Borracha(String cor, String marca, boolean capa) {
         this.cor = cor;
