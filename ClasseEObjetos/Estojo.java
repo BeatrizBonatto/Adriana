@@ -17,6 +17,7 @@ public class Estojo {
   public boolean abrir(boolean aberto) {
     if (aberto) {
       System.out.println("Estojo esta aberto");
+      return aberto;
     } else {
       System.out.println("Estojo esta fechado");
       return false;
