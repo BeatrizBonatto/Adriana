@@ -13,7 +13,11 @@ public class Teste {
         Alaude alaude = new Alaude(6, "Madeira", true);
         System.out.println("O número de cordas do alaude é: " + alaude.getCordas());
         System.out.println("O material do alaude é: " + alaude.getMaterial());
-        System.out.println("O alaude é analógico: " + alaude.analogico());
+        if (alaude.analogico()) {
+            System.out.println("O alaude é analógico");
+        } else {
+            System.out.println("O alaude não é analógico");
+        }
 
         System.out.println();
         System.out.println("Gostaria de visualizar as ações?\n1- sim\n2- não");
@@ -53,9 +57,9 @@ public class Teste {
 
         System.out.println("Celular");
         Celular celular = new Celular("iPhone 13", "Apple", 5000);
-        System.out.println("O modelo do celular é: " + celular.getModelo());
-        System.out.println("A marca do celular é: " + celular.getMarca());
-        System.out.println("O preço do celular é: " + celular.getPreco());
+        System.out.println("O modelo do celular é " + celular.getModelo());
+        System.out.println("A marca do celular é " + celular.getMarca());
+        System.out.println("O preço do celular é R$" + celular.getPreco());
 
         System.out.println();
         System.out.println("Gostaria de visualizar as ações?\n1- sim\n2- não");
@@ -74,9 +78,20 @@ public class Teste {
 
         System.out.println("Estojo");
         Estojo estojo = new Estojo("Vermelho", 5);
-        estojo.abrir(true);
-        estojo.guardar(true);
-        estojo.abrir(false);
+        System.out.println("A cor do estojo é " +estojo.getCor() +
+                            "\nO estojo possui " + estojo.getCompartimentos() + "compartimentos");
+
+        System.out.println();
+        System.out.println("Gostaria de visualizar as ações?\n1- sim\n2- não");
+        System.out.print("Resposta: ");
+        int respostaE = sc.nextInt();
+
+        if (respostaE == 1) {
+            estojo.abrir(true);
+            estojo.guardar(true);
+            estojo.abrir(false);
+            estojo.limpar(true);
+        }
 
         System.out.println("------------------------------------------------------------");
 
@@ -92,10 +107,7 @@ public class Teste {
         int respostaF = sc.nextInt();
 
         if (respostaF == 1) {
-            celular.ligar(true);
-            celular.discar(true);
-            celular.mandarMensagem(true);
-            celular.ligar(false);
+            filme.darNotaFilme(true);
         }
 
         System.out.println("------------------------------------------------------------");
@@ -110,5 +122,12 @@ public class Teste {
         System.out.println("------------------------------------------------------------");
 
 
+    }
+    public void visualizar(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println();
+        System.out.println("Gostaria de visualizar as ações?\n1- sim\n2- não");
+        System.out.print("Resposta: ");
+        int resposta = sc.nextInt();
     }
 }

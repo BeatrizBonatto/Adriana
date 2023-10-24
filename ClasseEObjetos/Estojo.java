@@ -15,9 +15,8 @@ public class Estojo {
 
   //metodos
   public boolean abrir(boolean aberto) {
-    if (aberto = true) {
+    if (aberto) {
       System.out.println("Estojo esta aberto");
-      return aberto;
     } else {
       System.out.println("Estojo esta fechado");
       return false;
@@ -28,7 +27,7 @@ public class Estojo {
     Scanner sc = new Scanner(System.in);
     String[] vetorEstojo = new String[tamanho];
 
-    if (guardado = true) {
+    if (guardado) {
       for (int i = 0; i < tamanho; i++) {
         System.out.println("O que quer guardar no esstojo?");
         String item = sc.next();
@@ -36,6 +35,13 @@ public class Estojo {
       }
     } System.out.println("Acabou o espaço no estojo");
     return guardado;
+  }
+
+  public boolean limpar(boolean limpo) {
+    if (limpo) {
+      System.out.println("Estojo limpo!");
+    }
+      return limpo;
   }
 
   //get e set
