@@ -10,24 +10,27 @@ public class Disquete {
     this.tamanho = tamanho;
     this.capacidade = capacidade;
   }
-  
-  public boolean getCor() {
+
+    public String getCor() {
         return cor;
     }
+
     public void setCor(String cor) {
         this.cor = cor;
     }
 
-  public boolean getTamanho() {
+    public double getTamanho() {
         return tamanho;
     }
+
     public void setTamanho(double tamanho) {
         this.tamanho = tamanho;
     }
 
-  public boolean getCapacidade() {
+    public double getCapacidade() {
         return capacidade;
     }
+
     public void setCapacidade(double capacidade) {
         this.capacidade = capacidade;
     }

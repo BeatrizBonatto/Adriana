@@ -17,9 +17,17 @@ public class Filme {
 
     Scanner sc = new Scanner(System.in);
     public void darNotaFilme(boolean notaFilme){
-        if (notaFilme = true) {
+        if (notaFilme) {
             System.out.println("Digite uma nota para o filme: ");
             double nota =sc.nextDouble();
+            System.out.println("Obrigado por avaliar!");
+        }
+    }
+
+    public void escreverCritica(boolean escrever) {
+        if (escrever) {
+            System.out.println("Escreva sua critica: ");
+            double critica =sc.nextDouble();
             System.out.println("Obrigado por avaliar!");
         }
     }

@@ -3,54 +3,62 @@ package ClasseEObjetos;
 import java.util.ArrayList;
 
 public class Harpa {
-    public static void main(String[] args) {
-        
-        String tom;
-        String tomAtua;
-        
-        ArrayList<String> cordas = new ArrayList<>();
-        cordas.add("Dó");
-        cordas.add("Ré");
-        cordas.add("Mi");
-        cordas.add("Fá");
-        cordas.add("Sol");
-        cordas.add("Lá");
-        cordas.add("Si");
-        
-        
-        public String cordasHarpa(){
-            System.out.println("|  |  |  |  |  |  |  |"+
-                             "\n   |  |  |  |  |  |  |"+
-                             "\n      |  |  |  |  |  |"+
-                             "\n         |  |  |  |  |"+
-                             "\n            |  |  |  |"+
-                             "\n               |  |  |"+
-                             "\n                  |  |"+
-                             "\n                     |");
-        return cordasHarpa;
+    private String tom;
+    private String tomAtua;
+    private String material;
+
+    public Harpa(String tom, String tomAtua, String material) {
+        this.tom = tom;
+        this.tomAtua = tomAtua;
+        this.material = material;
+    }
+
+    public void harpa(boolean tonsCordas) {
+            ArrayList<String> cordas = new ArrayList<>();
+            cordas.add("Dó");
+            cordas.add("Ré");
+            cordas.add("Mi");
+            cordas.add("Fá");
+            cordas.add("Sol");
+            cordas.add("Lá");
+            cordas.add("Si");
         }
-        
-        public Corda[] getCordas() {
-            return this.cordas;
+
+        public void cordasHarpa(boolean verHarpa) {
+            if (verHarpa) {
+                System.out.println("""
+                    |  |  |  |  |  |  |
+                       |  |  |  |  |  |
+                          |  |  |  |  |
+                             |  |  |  |
+                                |  |  |
+                                   |  |
+                                      |
+                                       """);
+            }
         }
-        
-        public void setCordas(Corda[] cordas) {
-            this.cordas = cordas;}
-        
-        public String getTom() {
-            return this.tom;
-        }
-        
-        public void setTom(String tom) {
-            this.tom = tom;
-        }
-        
-        public String getTomAtual() {
-            return this.tomAtual;
-        }
-        
-        public void setTomAtual(String tomAtual) {
-            this.tomAtual = tomAtual;
-        }
+
+    public String getTom() {
+        return tom;
+    }
+
+    public void setTom(String tom) {
+        this.tom = tom;
+    }
+
+    public String getTomAtua() {
+        return tomAtua;
+    }
+
+    public void setTomAtua(String tomAtua) {
+        this.tomAtua = tomAtua;
+    }
+
+    public String getMaterial() {
+        return material;
+    }
+
+    public void setMaterial(String material) {
+        this.material = material;
     }
 }
