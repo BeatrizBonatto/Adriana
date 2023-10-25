@@ -10,7 +10,7 @@ Lista de exercícios para treinar lógica de programação.
 - [Vetores](https://github.com/BeatrizBonatto/adriana/wiki/Vetores).
 
 ## Classes e Objetos
-Atividade para treinar orientação a objeto foram feitas algumas classes, tendo objetos criados dentro da [main](https://github.com/BeatrizBonatto/adriana/blob/main/10ClasseEObjetos/Teste.java).
+Atividade para treinar orientação a objeto foram feitas algumas classes, tendo objetos criados dentro da [main](https://github.com/BeatrizBonatto/Adriana/blob/main/ClasseEObjetos/Teste2.java).
 
 ## Try Catch
 Exercíco usando try e catch para tratamento de erro, evitando entrada de valor para realizar uma [Tabuada](https://github.com/BeatrizBonatto/adriana/blob/main/TryCatch/Tabuada.java) para o usuário, recebendo apenas um número inteiro.
